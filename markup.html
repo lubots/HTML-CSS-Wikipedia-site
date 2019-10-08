@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Markup</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/markup.css">
   </head>
   <body>
     <h1>Markup</h1>
       <p>HTML markup consists of several key components, including those called tags (and their attributes), character-based data types, character references and entity references. HTML tags most commonly come in pairs like &lt;h1&gt; and &lt;/h1&gt;, although some represent empty elements and so are unpaired, for example &lt;img&gt;. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags). </p>
       <p>Another important component is the HTML document type declaration, which triggers standards mode rendering.</p>
       <p>The following is an example of the classic "Hello, World!" program:</p>
-      <div id=fixthislaterwhendoingcss>
+      <div class = "code">
         <p>&lt;!DOCTYPE html&gt;</p>
         <p>&lt;html&gt;</p>
         <p>&lt;head&gt;</p>
@@ -32,13 +34,13 @@
       <p>The general form of an HTML element is therefore: &lt;tag attribute1="value1" attribute2="value2"&gt;''content''&lt;/tag&gt;. Some HTML elements are defined as empty elements and take the form &lt;tag attribute1="value1" attribute2="value2"&gt;. Empty elements may enclose no content, for instance, the &lt;br&gt; tag or the inline &lt;img&gt; tag. The name of an HTML element is the name used in the tags. Note that the end tag's name is preceded by a slash character, /, and that in empty elements the end tag is neither required nor allowed. If attributes are not mentioned, default values are used in each case. </p>
       <h3>Element examples</h3>
       <p>Header of the HTML document: &lt;head&gt;...&lt;/head&gt;. The title is included in the head, for example:</p>
-      <div id=fixthislaterwhendoingcss>
+      <div class = "code">
         <p>&lt;head&gt;</p>
         <p>&lt;title&gt;The Title&lt;/title&gt;</p>
         <p>&lt;/head&gt;</p>
       </div>
       <p>Headings: HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags with H1 being the highest (or most important) level and H6 the least:</p>
-      <div id=fixthislaterwhendoingcss>
+      <div class = "code">
         <p>&lt;h1&gt;Heading level 1&lt;/h1&gt;</p>
         <p>&lt;h2&gt;Heading level 2&lt;/h2&gt;</p>
         <p>&lt;h3&gt;Heading level 3&lt;/h3&gt;</p>
@@ -47,26 +49,26 @@
         <p>&lt;h6&gt;Heading level 6&lt;/h6&gt;</p>
       </div>
       <p>Paragraphs:</p>
-      <div id=fixthislaterwhendoingcss>
+      <div class = "code">
         <p>&lt;p&gt;Paragraph 1&lt;/p&gt; &lt;p&gt;Paragraph 2&lt;/p&gt;</p>
       </div>
       <p>Line breaks: &lt;br&gt;. The difference between &lt;br&gt; and &lt;p&gt; is that br breaks a line without altering the semantic structure of the page, whereas p sections the page into paragraphs. Note also that br is an empty element in that, although it may have attributes, it can take no content and it may not have an end tag.</p>
-      <div id=fixthislaterwhendoingcss>
+      <div class = "code">
         <p>&lt;p&gt;This &lt;br&gt; is a paragraph &lt;br&gt; with &lt;br&gt; line breaks&lt;/p&gt;</p>
       </div>
       <p>This is a link in HTML. To create a link the &lt;a&gt; tag is used. The href attribute holds the URL address of the link. </p>
-      <div id=fixthislaterwhendoingcss>
+      <div class = "code">
         <p>&lt;a href="https://www.wikipedia.org/"&gt;A link to Wikipedia!&lt;/a&gt;</p>
       </div>
       <p>Inputs:</p>
       <p>There are many possible ways a user can give input/s like:</p>
-      <div id=fixthislaterwhendoingcss>
+      <div class = "code">
         <p>&lt;input type="text" /&gt; &lt;!-- This is for text input --&gt;</p>
         <p>&lt;input type="file" /&gt; &lt;!-- This is for uploading files --&gt;</p>
         <p>&lt;input type="checkbox" /&gt; &lt;!-- This is for checkboxes --&gt;</p>
       </div>
       <p>Comments:</p>
-      <div id=fixthislaterwhendoingcss>
+      <div class = "code">
         <p>&lt;!-- This is a comment --&gt;</p>
       </div>
       <p>Comments can help in the understanding of the markup and do not display in the webpage.</p>
@@ -86,13 +88,13 @@
         <li>An author may use the style attribute to assign presentational properties to a particular element. It is considered better practice to use an element's id or class attributes to select the element from within a stylesheet, though sometimes this can be too cumbersome for a simple, specific, or ad hoc styling.</li>
         <li>The title attribute is used to attach subtextual explanation to an element. In most browsers this attribute is displayed as a tooltip.</li>
         <li>The lang attribute identifies the natural language of the element's contents, which may be different from that of the rest of the document. For example, in an English-language document:
-          <div id=fixthislaterwhendoingcss>
+          <div class = "code">
             <p>&lt;p&gt;Oh well, &lt;span lang="fr"&gt;c'est la vie&lt;/span&gt;, as they say in France.&lt;/p&gt;</p>
           </div>
         </li>
       </ul>
       <p>The abbreviation element, abbr, can be used to demonstrate some of these attributes:</p>
-      <div id=fixthislaterwhendoingcss>
+      <div class = "code">
         <p>&lt;abbr id="anId" class="jargon" style="color:purple;" title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;</p>
       </div>
       <p>This example displays as HTML; in most browsers, pointing the cursor at the abbreviation should display the title text "Hypertext Markup Language." </p>
@@ -105,11 +107,11 @@
       <p>HTML documents are required to start with a Document Type Declaration (informally, a "doctype"). In browsers, the doctype helps to define the rendering mode—particularly whether to use quirks mode.</p>
       <p>The original purpose of the doctype was to enable parsing and validation of HTML documents by SGML tools based on the Document Type Definition (DTD). The DTD to which the DOCTYPE refers contains a machine-readable grammar specifying the permitted and prohibited content for a document conforming to such a DTD. Browsers, on the other hand, do not implement HTML as an application of SGML and by consequence do not read the DTD.</p>
       <p>HTML5 does not define a DTD; therefore, in HTML5 the doctype declaration is simpler and shorter:</p>
-      <div id=fixthislaterwhendoingcss>
+      <div class = "code">
         <p>&lt;!DOCTYPE html&gt;</p>
       </div>
       <p>An example of an HTML 4 doctype:</p>
-      <div id=fixthislaterwhendoingcss>
+      <div class = "code">
         <p>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd"&gt;</p>
       </div>
       <p>This declaration references the DTD for the "strict" version of HTML 4.01. SGML-based validators read the DTD in order to properly parse the document and to perform validation. In modern browsers, a valid doctype activates standards mode as opposed to quirks mode.</p>
