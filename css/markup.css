@@ -1,4 +1,9 @@
 .code{
-  background-color: lightgray;
+  background-color: #e6e6e6;
+  line-height: 12px;
+}
+
+code{
   font-family: serif;
+  font-size: 16px;
 }
