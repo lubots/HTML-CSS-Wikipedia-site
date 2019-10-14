@@ -6,8 +6,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/markup.css">
   </head>
+
   <body>
-    <object class="navBar" type="text/html" data="navBar.html" width="100%"></object>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">HTML</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="history.html">History</a>
+          <a class="nav-item nav-link" href="markup.html">Markup</a>
+          <a class="nav-item nav-link" href="semanticHTML.html">Semantic HTML</a>
+          <a class="nav-item nav-link" href="delivery.html">Delivery</a>
+          <a class="nav-item nav-link" href="HTML4 Variations.html">HTML4 Variations</a>
+          <a class="nav-item nav-link" href="whatwg.html">WHATWG HTML versus HTML5</a>
+          <a class="nav-item nav-link" href="hypertextFeatures.html">Hypertext features not in HTML</a>
+          <a class="nav-item nav-link" href="wysiwig.html">WYSIWYG editors</a>
+          <a class="nav-item nav-link" href="See_Also.html">See also</a>
+          <a class="nav-item nav-link" href="References.html">References</a>
+          <a class="nav-item nav-link" href="External Links.html">External links</a>
+        </div>
+      </div>
+    </nav>
+    <!--End of Navigation Bar -->
+    <main role="main" class="container">
+      <div class="jumbotron">
     <h1>Markup</h1>
       <p>HTML markup consists of several key components, including those called tags (and their attributes), character-based data types, character references and entity references. HTML tags most commonly come in pairs like <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code>, although some represent empty elements and so are unpaired, for example <code>&lt;img&gt;</code>. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags). </p>
       <p>Another important component is the HTML document type declaration, which triggers standards mode rendering.</p>
@@ -117,7 +141,8 @@
       </code></div>
       <p>This declaration references the DTD for the "strict" version of HTML 4.01. SGML-based validators read the DTD in order to properly parse the document and to perform validation. In modern browsers, a valid doctype activates standards mode as opposed to quirks mode.</p>
       <p>In addition, HTML 4.01 provides Transitional and Frameset DTDs, as explained below. Transitional type is the most inclusive, incorporating current tags as well as older or "deprecated" tags, with the Strict DTD excluding deprecated tags. Frameset has all tags necessary to make frames on a page along with the tags included in transitional type.</p>
-
+    </div>
+  </main>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
